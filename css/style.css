@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: block;
+    justify-content: center;
+    background-color: #F5E6F4;
+    font-family: "Montserrat", sans-serif;
+    font: bold;
+
+}
+
+/*Parte barra de navegacion*/
+
+.nav--contenedor {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #FFF7AD, #FFBAF0);
+}
+
+.div--block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 45px;
+    margin: 3% 1% 3% 5%;
+
+}
+
+.nav--navegacion input {
+    width: 500px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.nav--navegacion button {
+    width: 100px;
+    height: 25px;
+    margin-left: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px;
+    box-shadow: none;
+}
+
+.nav--logo img {
+    height: 80px;
+    width: 85px;
+    margin-right: 50px;
+}
+
+.nav--ul {
+    display: inline-flex;
+    justify-content: space-around;
+
+}
+
+.nav--ul li {
+    flex-wrap: wrap;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font: bold;
+    padding-left: 10px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Parte destacados*/
+
+.destacados--contenedor {
+    display: flex;
+    margin: 25px 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+.destacado--contenedor-ofertas img {
+    object-fit: cover;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/*Parte productos*/
+
+.destadado--titulo {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.prueba {
+    display: flex;
+    justify-content: center;
+}
+
+.productos--contenedor {
+    position: relative;
+    left: 2%;
+}
+
+
+.productos--contenedor-imagen {
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+}
+
+.productos--contenedor {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.productos--contenedor-imagen img {
+    object-fit: cover;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.productos--contenedor-lista {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.productos--contenedor-lista ul li {
+    text-align: justify;
+    list-style: none;
+}
+
+/*Parte para el footer*/
+
+.footer--contenedor {
+    height: 140px;
+    width: 100%;
+    background: linear-gradient(to right, #FFBAF0, #FFF7AD);
+    display: flex;
+    justify-content: space-between;
+}
+
+.prueba2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2%;
+}
+
+.div-prueba {
+    position: relative;
+    right: 3%;
+}
+
+.prueba-redes {
+    display: flex;
+    width: 300px;
+    align-items: center;
+}
+
+.redes-iconos a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.contacto-whatsapp {
+    display: flex;
+    align-items: center;
+}
+
+.contacto-whatsapp img {
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+}
+
+.contacto-email {
+    display: flex;
+    align-items: center;
+}
+
+.contacto-email img {
+    width: 30px;
+    height: 20px;
+    margin: 2px;
+}

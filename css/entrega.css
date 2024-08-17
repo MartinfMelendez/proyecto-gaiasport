@@ -1,0 +1,793 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Serif", serif;
+    background-color: #f7dbfd;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+span {
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* BARRA DE NAVEGACION*/
+.navbar {
+    width: 100%;
+    background: linear-gradient(to right, #FFF7AD, #FFBAF0);
+}
+
+.navbar-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+}
+
+.navbar-logo a img {
+    margin: .625rem 0;
+    height: 80px;
+    width: 85px;
+}
+
+.navbar-navegacion {
+    position: relative;
+    width: 500px;
+    margin-left: 90px;
+}
+
+.navbar-navegacion input {
+
+    width: 100%;
+    padding-right: 40px;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.navbar-navegacion button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.navbar-ul {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    list-style: none;
+    font-size: 20px;
+}
+
+.navbar-ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/*MAIN INDEX*/
+
+.contenedor-ofertas {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.ofertas img {
+    height: 28.125rem;
+    width: 20rem;
+}
+
+.section-productos h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.contenedor-cards {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    margin: .9375rem 0;
+    justify-content: center;
+    gap: 1.875rem;
+    align-items: center;
+    object-fit: contain;
+}
+
+.card {
+    width: 15.625rem;
+    height: 18.75rem;
+    border-radius: .3125rem;
+}
+
+.card .card-img {
+    width: 100%;
+    height: 60%;
+    margin-bottom: .625rem;
+}
+
+.card .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-info a {
+    text-decoration: none;
+    color: black;
+}
+
+.card-info h3 {
+    font-size: large;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.card-info--ul {
+    list-style: none;
+    text-align: center;
+}
+
+/*FOOTER*/
+
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to left, #FFF7AD, #FFBAF0);
+    padding: 0 3%;
+    font-size: 1.125rem;
+    margin-top: auto;
+}
+
+.footer-titulo {
+    margin-right: 70px;
+}
+
+.buscanos {
+    text-align: center;
+    margin: .625rem 0;
+}
+
+.prueba-redes {
+    display: flex;
+    gap: 8px;
+    margin: 2px;
+}
+
+.redes-iconos img {
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: 1px;
+}
+
+.contacto {
+    display: flex;
+    gap: .3125rem;
+    margin: 2px;
+}
+
+.contacto img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+/*PAGINA PRODUCTOS*/
+
+.section-productos-pag {
+    display: flex;
+    justify-content: space-between;
+    gap: 3.125rem;
+    margin: 1.5625rem 1.5625rem;
+}
+
+.contenedor-categorias {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.categorias .categoria-ul {
+    margin-left: 35%;
+    list-style: none;
+    font-size: 25px;
+}
+
+.categorias h3 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.categoria-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 35%;
+}
+
+.categorias h6 {
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+
+.form-precio {
+    display: flex;
+    align-items: center;
+
+}
+
+.form-precio input {
+    width: 3.75rem;
+    margin: 0 5px;
+}
+
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    object-fit: contain;
+}
+
+.cardpro {
+    width: 12.5rem;
+    height: 18.75rem;
+    border-radius: .3125rem;
+}
+
+/*Pagina Cuenta*/
+
+.formulario-cuenta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cuenta-centrar {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    ;
+}
+
+.cuenta-centrar h1 {
+    font-size: 5.625rem;
+    margin-bottom: 1.875rem;
+}
+
+.grupo-formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.grupo-formulario input {
+    border: none;
+    border-radius: .625rem;
+    text-align: justify;
+    font-size: 15px;
+    height: 2.1875rem;
+    margin: .3125rem 0;
+}
+
+.grupo-formulario {
+    font-size: 25px;
+}
+
+.recuperar-cuenta {
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: end;
+}
+
+.recuperar-cuenta a {
+    text-decoration: none;
+    color: black;
+}
+
+.grupo-formulario button {
+    margin-bottom: 15px;
+    height: 2.1875rem;
+    border-radius: .625rem;
+    font-size: 18px;
+}
+
+.cuenta-nueva {
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.cuenta-nueva a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*Nuevo Usuario*/
+
+
+.section-newUser h1 {
+    text-align: center;
+    font-size: 5.625rem;
+    margin-bottom: 1.875rem;
+}
+
+.formulario-newUser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grupo-newUser {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.grupo-newUser label {
+    font-size: 1.25rem;
+}
+
+.grupo-newUser input {
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 350px;
+    height: 30px;
+}
+
+.formulario-newUser button {
+
+    height: 2.1875rem;
+    width: 300px;
+    border-radius: .625rem;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/*PAGINA DETALLES*/
+
+.contenedor-pagDetalles {
+    display: flex;
+    gap: 3.125rem;
+    margin: 3%;
+}
+
+.separador-posescolores {
+    display: flex;
+    flex-direction: row;
+    gap: .625rem;
+}
+
+.container-poses {
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+    margin-top: 3.125rem;
+}
+
+.container-colores {
+    display: flex;
+    justify-content: center;
+    margin-left: 6.25rem;
+    gap: .625rem;
+}
+
+.container-colores img {
+    height: 7.8125rem;
+    width: 6.875rem;
+}
+
+.container-poses img {
+    height: 7.8125rem;
+    width: 6.25rem;
+}
+
+.container_producto img {
+    height: 31.25rem;
+    width: 28.125rem;
+}
+
+.container__detalles {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.container__detalles-titulo h1 {
+    font-size: 55px;
+}
+
+.container__detalles-titulo h2 {
+    font-size: 35px;
+    margin-bottom: .625rem;
+}
+
+.container__detalles-titulo p {
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 100;
+    margin-bottom: 25px;
+}
+
+.container__detalles_modopagos {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+    gap: .625rem;
+    margin-bottom: 10px;
+}
+
+.container__detalles_modopagos p {
+    font-size: 20px;
+}
+
+.container__detalles_modopagos img {
+    align-items: start;
+    height: 3.125rem;
+    width: 3.125rem;
+}
+
+.formulario-compra {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-compra label {
+    font-size: 1.125rem;
+}
+
+.formulario-compra select {
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: .625rem;
+    height: 1.5625rem;
+    width: 9.375rem;
+}
+
+.formulario-compra input {
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: .625rem;
+    height: 1.5625rem;
+    width: 9.375rem;
+}
+
+.formulario-compra button {
+    margin: 10px 0;
+    width: 9.375rem;
+    height: 1.5625rem;
+    border-radius: .625rem;
+}
+
+.formulario-envio label {
+    font-size: 1.125rem;
+}
+
+.formulario-envio input {
+    width: 9.375rem;
+    height: 1.5625rem;
+    border-radius: .3125rem;
+}
+
+.formulario-envio button {
+    width: 4.6875rem;
+    height: 1.5625rem;
+    border-radius: .3125rem;
+}
+
+
+@media(max-width: 1440px) {
+
+    .card {
+        width: 18.75rem;
+        height: 15.625rem;
+        border-radius: .3125rem;
+        margin-bottom: 30px;
+    }
+
+    .cardpro {
+        width: 250px;
+        height: 21.875rem;
+        border-radius: .3125rem;
+    }
+
+
+}
+
+@media(max-width: 1024px) {
+
+    .navbar-navegacion input {
+        width: 90%;
+    }
+
+    .navbar-navegacion button {
+        right: 60px;
+    }
+
+    .ofertas img {
+        height: 25rem;
+        width: 16.875rem;
+    }
+
+    .contenedor-productos {
+        gap: 1.25rem;
+    }
+
+    .card {
+        width: 12.5rem;
+        height: 15.625rem;
+        border-radius: .3125rem;
+        margin-bottom: 40px;
+    }
+
+    .cardpro {
+        width: 9.375rem;
+        height: 18.75rem;
+        border-radius: .3125rem;
+    }
+
+    .contenedor-pagDetalles {
+        display: flex;
+        gap: 3.125rem;
+        margin: 1%;
+    }
+
+    .container-colores img {
+        height: 115px;
+        width: 90px;
+    }
+
+    .container-poses img {
+        height: 115px;
+        width: 90px;
+    }
+
+    .container_producto img {
+        height: 28.125rem;
+        width: 23.125rem;
+    }
+
+
+}
+
+@media(max-width: 768px) {
+
+    .navbar-ul {
+        gap: .625rem;
+    }
+
+    .grid {
+        margin-bottom: 30px;
+    }
+
+    .navbar-navegacion {
+        position: relative;
+        width: 300px;
+        margin-left: 70px;
+    }
+
+    .navbar-navegacion input {
+        font-size: 12px;
+    }
+
+
+    .navbar-navegacion button {
+        right: 35px;
+        font-size: 12px;
+    }
+
+    .ofertas img {
+        height: 25rem;
+        width: 16.875rem;
+    }
+
+    .card {
+        width: 9.375rem;
+        height: 15.625rem;
+        border-radius: .3125rem;
+        margin-bottom: 70px;
+    }
+
+
+    .cardpro {
+        width: 9.375rem;
+        height: 18.75rem;
+        border-radius: .3125rem;
+    }
+
+    .contenedor-pagDetalles {
+        display: flex;
+        flex-direction: column;
+        gap: 3.125rem;
+        margin: 3%;
+    }
+
+    .separador-posescolores {
+        margin-left: 6.25rem;
+    }
+
+    .container-imagenes {
+        justify-content: center;
+        gap: .625rem;
+    }
+
+    .contenedor-formdetalles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor-redes {
+        display: flex;
+        gap: 10px;
+    }
+
+    .redes-iconos a img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .redes-pagina h5 {
+        display: none;
+    }
+
+    .contenedor-contactos {
+        display: flex;
+        gap: 20px;
+    }
+
+    .contacto img {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .contacto-gmail img {
+        height: 1.875rem;
+        width: 2.5rem;
+    }
+
+
+    .contacto h4,
+    .gmail h4 {
+        display: none;
+    }
+
+}
+
+@media(max-width: 425px) {
+    .navbar-ul {
+        display: flex;
+        flex-direction: column;
+        gap: .1875rem;
+        justify-content: center;
+        list-style: none;
+        font-size: 15px;
+    }
+
+    .navbar-logo a img {
+        margin: .625rem 0;
+        height: 60px;
+        width: 65px;
+    }
+
+    .navbar-navegacion {
+        position: relative;
+        width: 200px;
+        margin-left: 20px;
+    }
+
+    .navbar-navegacion input {
+        padding: 10px;
+        font-size: 10px;
+        text-align: start;
+    }
+
+    .navbar-navegacion button {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        background: none;
+        cursor: pointer;
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .section-productos-pag {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+
+        margin-bottom: 70px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-titulo h2 {
+        text-align: center;
+        padding-left: 50px;
+    }
+
+    .buscanos h4 {
+        font-size: 1.5625rem;
+    }
+
+
+    .contenedor-pagDetalles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container-imagenes {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+
+    .container_producto img {
+        height: 18.75rem;
+        width: 15.625rem;
+    }
+
+    .container-colores img {
+        height: 4.6875rem;
+        width: 4.6875rem;
+    }
+
+    .container-poses img {
+        height: 4.6875rem;
+        width: 4.6875rem;
+    }
+
+    .cuenta-centrar h1 {
+        font-size: 3.75rem;
+    }
+
+    .section-newUser h1 {
+        font-size: 3.75rem;
+        margin-top: .625rem;
+
+    }
+
+}
