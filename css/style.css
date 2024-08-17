@@ -444,7 +444,7 @@ footer {
     margin-bottom: .625rem;
 }
 
-.container__detalles-titulo p {
+.container__detalles-titulo label {
     font-size: 20px;
     text-align: justify;
     font-weight: 100;
@@ -834,7 +834,7 @@ footer {
 
     .grupo-newUser input {
         text-align: center;
-        width: 200px;
+        width: 250px;
     }
 
 
