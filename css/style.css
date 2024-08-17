@@ -708,6 +708,10 @@ footer {
         font-size: 15px;
     }
 
+    .navbar-navegacion button {
+        right: 100px;
+    }
+
     .navbar-logo a img {
         margin: .625rem 0;
         height: 60px;
@@ -833,5 +837,22 @@ footer {
         width: 200px;
     }
 
+
+}
+
+@media(max-width: 375px) {
+
+
+    .cardpro {
+        height: 220px;
+        margin: 10px;
+    }
+
+    .card-info {
+        width: 300px;
+        text-align: start;
+        position: relative;
+        right: 80px;
+    }
 
 }
