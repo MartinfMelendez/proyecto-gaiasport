@@ -747,6 +747,40 @@ footer {
         flex-direction: column;
     }
 
+    .separador-posescolores {
+        position: relative;
+        right: 40px;
+    }
+
+    .container-colores {
+        position: relative;
+        right: 40px;
+    }
+
+    .container-poses {
+        position: relative;
+        bottom: 20px;
+    }
+
+    .container__detalles-titulo {
+        text-align: center;
+    }
+
+    .container__detalles-titulo h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .container__detalles-titulo label {
+        margin: 0;
+    }
+
+    .formulario-envio {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .card {
         margin-bottom: 70px;
     }
