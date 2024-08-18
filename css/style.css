@@ -518,6 +518,14 @@ footer {
     border-radius: .3125rem;
 }
 
+.nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    margin-top: 15px;
+}
+
 
 @media(max-width: 1440px) {
 
@@ -890,12 +898,12 @@ footer {
     }
 
 
-    .separador-posescolores{
+    .separador-posescolores {
         position: relative;
-       left: 1px;
+        left: 1px;
     }
 
-    .container-colores{
+    .container-colores {
         position: relative;
         left: 1px;
     }
