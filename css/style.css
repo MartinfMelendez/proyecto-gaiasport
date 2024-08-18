@@ -889,4 +889,15 @@ footer {
         right: 80px;
     }
 
+
+    .separador-posescolores{
+        position: relative;
+       left: 1px;
+    }
+
+    .container-colores{
+        position: relative;
+        left: 1px;
+    }
+
 }
